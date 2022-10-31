@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import TodoItem from './TodoItem';
 
 class TodosList extends React.PureComponent {
   render() {
@@ -7,7 +8,7 @@ class TodosList extends React.PureComponent {
     return (
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
+          <TodoItem key={todo.id} todo={todo} />
         ))}
       </ul>
     );
