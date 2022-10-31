@@ -1,9 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 class TodoItem extends React.PureComponent {
   render() {
     const { todo } = this.props;
-    return <li>{this.props.todo.title}</li>;
+    const { id, title } = todo;
+    console.log(id);
+    console.log(title);
+    return <li key={id}>{title}</li>;
   }
 }
 
