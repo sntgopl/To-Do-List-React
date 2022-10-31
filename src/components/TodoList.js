@@ -1,15 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 class TodosList extends React.PureComponent {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
+    const { todos } = this.props;
     return (
       <ul>
-        {this.props.todos.map((todo) => (
-          <li>{todo.title}</li>
+        {todos.map((todo) => (
+          <li key={todo.id}>{todo.title}</li>
         ))}
       </ul>
     );

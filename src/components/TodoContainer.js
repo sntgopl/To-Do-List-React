@@ -4,7 +4,7 @@ import TodosList from './TodoList';
 class TodoContainer extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.setState = {
+    this.state = {
       todos: [
         {
           id: 1,
@@ -26,9 +26,10 @@ class TodoContainer extends React.PureComponent {
   }
 
   render() {
+    const { todos } = this.state;
     return (
       <ul>
-        <TodosList todos={this.state.todos} />
+        <TodosList todos={todos} />
       </ul>
     );
   }
