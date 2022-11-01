@@ -31,9 +31,9 @@ class TodoContainer extends React.PureComponent {
   render() {
     const { todos } = this.state;
     return (
-      <ul>
-        <Header />
+      <ul className="headContainer">
         <Navbar />
+        <Header />
         <InputTodo />
         <TodosList todos={todos} />
       </ul>

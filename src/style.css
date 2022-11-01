@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.headContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2rem;
+  max-height: 99vh;
+  max-width: 99vw;
+  border: 5px inset blanchedalmond;
+  border-radius: 25px 250px 25px 250px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+  width: 20vw;
+  height: 97vh;
+  border: 3px inset black;
+  border-radius: 25px 250px 25px 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: space-between;
+  color: white;
+  font-size: xx-large;
+  text-shadow: 3px 3px 3px black;
+}
+
+header {
+  border: 2px inset aliceblue;
+  border-radius: 75px 1250px 75px 1250px;
+  width: 75vw;
+  height: 20vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-shadow: 5px 5px 5px burlywood;
+  background-color: azure;
+}
+
+.form {
+  width: 75vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.taskInput {
+  background-color: antiquewhite;
+  border: 2px inset antiquewhite;
+  border-radius: 5px 15px;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.addButton {
+  background-color: antiquewhite;
+  border: 2px inset antiquewhite;
+  border-radius: 55px 55px;
+  width: fit-content;
+  padding: 0.5rem 10rem;
+  align-self: center;
+  color: maroon;
+  text-shadow: 2px 2px 2px black;
+}
