@@ -2,12 +2,12 @@
 import React from 'react';
 
 function TodoItem(props) {
-  const { todo } = props;
+  const { todo, handleChangeProps } = props;
   const { id, title, completed } = todo;
   return (
     <React.StrictMode>
       <li key={id}>
-        <input type="checkbox" checked={completed} />
+        <input type="checkbox" checked={completed} onChange={() => handleChangeProps()} />
         {title}
       </li>
     </React.StrictMode>

@@ -28,6 +28,10 @@ class TodoContainer extends React.PureComponent {
     };
   }
 
+  handleChange = () => {
+    console.log('clicked');
+  }
+
   render() {
     const { todos } = this.state;
     return (
@@ -35,7 +39,7 @@ class TodoContainer extends React.PureComponent {
         <Navbar />
         <Header />
         <InputTodo />
-        <TodosList todos={todos} />
+        <TodosList todos={todos} handleChangeProps={this.handleChange} />
       </ul>
     );
   }
