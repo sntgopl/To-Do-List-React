@@ -1,6 +1,8 @@
 import React from 'react';
 import TodosList from './TodoList';
 import Header from './Header';
+import Navbar from './Navbar';
+import InputTodo from './InputTodo';
 
 class TodoContainer extends React.PureComponent {
   constructor(props) {
@@ -31,6 +33,8 @@ class TodoContainer extends React.PureComponent {
     return (
       <ul>
         <Header />
+        <Navbar />
+        <InputTodo />
         <TodosList todos={todos} />
       </ul>
     );
