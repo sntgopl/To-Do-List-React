@@ -16,6 +16,7 @@ body {
   border: 5px inset blanchedalmond;
   border-radius: 25px 250px 25px 250px;
   font-family: 'Courier New', Courier, monospace;
+  background-color: darkcyan;
 }
 
 nav {
@@ -77,5 +78,5 @@ header {
   padding: 0.5rem 10rem;
   align-self: center;
   color: maroon;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 6px black;
 }
