@@ -7,7 +7,7 @@ function TodoItem(props) {
   return (
     <React.StrictMode>
       <li key={id}>
-        <input type="checkbox" checked={completed} onChange={() => handleChangeProps()} />
+        <input type="checkbox" checked={completed} onChange={() => handleChangeProps(id)} />
         {title}
       </li>
     </React.StrictMode>
