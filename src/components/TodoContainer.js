@@ -1,5 +1,8 @@
 import React from 'react';
 import TodosList from './TodoList';
+import Header from './Header';
+import Navbar from './Navbar';
+import InputTodo from './InputTodo';
 
 class TodoContainer extends React.PureComponent {
   constructor(props) {
@@ -25,11 +28,28 @@ class TodoContainer extends React.PureComponent {
     };
   }
 
+  handleChange = (id) => {
+    const { todos } = this.state;
+    this.setState({
+      /* eslint-disable no-param-reassign */
+      todos: todos.map((todo) => {
+        if (todo.id === id) {
+          todo.completed = !todo.completed;
+        }
+        return todo;
+      }),
+    });
+    /* eslint-disable no-param-reassign */
+  };
+
   render() {
     const { todos } = this.state;
     return (
-      <ul>
-        <TodosList todos={todos} />
+      <ul className="headContainer">
+        <Navbar />
+        <Header />
+        <InputTodo />
+        <TodosList todos={todos} handleChangeProps={this.handleChange} />
       </ul>
     );
   }
