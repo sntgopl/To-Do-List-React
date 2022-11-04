@@ -29,10 +29,10 @@ class TodoContainer extends React.PureComponent {
   }
 
   handleChange = (id) => {
-    // const { task } = this.state;
+    const { todos } = this.state;
     this.setState({
       /* eslint-disable no-param-reassign */
-      todos: this.state.todos.map((todo) => {
+      todos: todos.map((todo) => {
         if (todo.id === id) {
           todo.completed = !todo.completed;
         }
